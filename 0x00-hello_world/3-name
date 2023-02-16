@@ -1,0 +1,2 @@
+#!/bin/bash
+gdd $CFILE-0 cisfun
