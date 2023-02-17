@@ -7,10 +7,12 @@
  */
 int main(void)
 {
-char ap
-for (ap = 'a'; ap <= 'z'; ap++)
+char alph[26] = "abcdefghijklmnopqrstuvwxyz";
+int i;
+
+for (i = 0; i < 26; i++)
 {
-putchar(ap);
+putchar(alph[i]);
 }
 putchar('\n');
 return (0);
