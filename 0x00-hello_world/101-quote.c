@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 /**
  * main - Program that prints piece of art is usedful
  * Return: 1 (If successful)
