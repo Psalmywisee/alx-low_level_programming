@@ -1,29 +1,30 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_sign - prints signs positive, negative and zero signs
- * @n: function parameter to handle argument
- * Return: 1, 0 and -1 (As success)
+ *print_sign - prints positive, negative signs
+ *@n: the oarameter of the function
+ *Return: 1, 0 and -1 (if successful)
  */
-
 int print_sign(int n)
-
 {
 	if (n > 0)
 	{
-	printf("+, ");
+	_putchar('+');
+	_putchar(',');
+	_putchar(' ');
 	return (1);
 	}
 	else if (n == 0)
 	{
-	printf("0, ");
+	_putchar('+');
+	_putchar(',');
+	_putchar(' ');
 	return (0);
 	}
 	else
 	{
-	printf("-, ");
+	_putchar('-');
+	_putchar(',');
+	_putchar(' ');
 	return (-1);
 	}
 }
-
