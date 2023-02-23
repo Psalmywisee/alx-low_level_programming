@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*main - finds digit from 0 to 9
 *mul - checks for a digit from 0 to 9
 *@a: parameter a
 *@b: parameter b
