@@ -1,12 +1,14 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <unistd.h>
 /**
  * print_number - print integers
  * @n: integer parameter
- * Return: 0
+ * Return: 0 Always
  */
 
 void print_number(int n)
+
 {
 	unsigned int n1;
 
