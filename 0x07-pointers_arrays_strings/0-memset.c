@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _memset - function that fills a block of memory with a byte
  * @s: pointer to memory to be filled
@@ -7,6 +8,7 @@
  *
  * Return: changed array with new value for n bytes
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
