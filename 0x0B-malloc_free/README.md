@@ -1,10 +1,10 @@
 Task on Malloc and free functions in the following order:
-1. Write a function that creates an array of chars, and initializes it with a specific char.
+0. Write a function that creates an array of chars, and initializes it with a specific char.
 
 Prototype: char *create_array(unsigned int size, char c);
 Returns NULL if size = 0
 Returns a pointer to the array, or NULL if it fails
-2. Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
+1. Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 
 Prototype: char *_strdup(char *str);
 The _strdup() function returns a pointer to a new string which is a duplicate of the string str. Memory for the new string is obtained with malloc, and can be freed with free.
@@ -26,7 +26,3 @@ If width or height is 0 or negative, return NULL
 
 Prototype: void free_grid(int **grid, int height);
 Note that we will compile with your alloc_grid.c file. Make sure it compiles.
-
-
-
-
