@@ -20,9 +20,9 @@ int is_digit(char *s)
 	return (1);
 }
 /**
- * _strlen - returns the length of a string
+ * _strlen - code to return the length of a string
  * @s: string to evaluate
- * Return: the length of the string
+ * Return:  length of the string
  */
 int _strlen(char *s)
 {
@@ -43,7 +43,7 @@ void errors(void)
 	exit(98);
 }
 /**
- * main - multiplies two positive numbers
+ * main - Main program to multiply two positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: Always 0
