@@ -66,7 +66,7 @@
 	if (dog->name == NULL)
 	{
 	free(dog);
-	free(dog->owner);
+	free(dog->name);
 	return (NULL);
 	}
 	_strcpy(dog->owner, owner);
