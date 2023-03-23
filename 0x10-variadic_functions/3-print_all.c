@@ -38,7 +38,8 @@
 			case 's':
 				str = va_arg(vlist, char *), c = 1;
 				if (!str)
-				{printf("(nil");
+				{
+					printf("(nil");
 					break;
 				}
 				printf("%s", str);
@@ -46,7 +47,6 @@
 		}
 		i++;
 	}
-	printf("\n");
-		va_end(vlist);
+	printf("\n" , va_end(vlist));
 
 }
