@@ -4,42 +4,49 @@
 /**
 * print_all - prints anything possible
 * @format: list of types of arguments
+* Return: (0)
 */
 	void print_all(const char * const format, ...)
 	{
 	int i = 0;
-	char *str, *sep = "";
-	va_list list;
+	char *str;
+	va_list vlist;
+	unsigned int i = 0, j, c = 0;
 
-	va_start(list, format);
-	if (format)
-	while (format[i])
-	{
-	switch (format[i])
-	{
-	case 'c':
-	printf("%s%c", sep, va_arg(list, int));
-	break;
-	case 'i':
-	printf("%s%d", sep, va_arg(list, int));
-	break;
-	case 'f':
-	printf("%s%f", sep, va_arg(list, double));
-	break;
-	case 's':
-	str = va_arg(list, char *);
-	if (!str)
-	str = "(nil)";
-	printf("%s%s", sep, str);
-	break;
-	default:
-	i++;
-	continue;
+	cont char t_arg[} = "ijfsc"
+	va_start(vlist, format);
+		while (format && format[i])
+		{
+			j = 0;
+			while (t_arg[j])
+				if (format[i] == t_arg[j] && c)
+				{
+					printf(",");
+					break;
+				} j++;
+		}
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(vlist, int)), c = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(vlist, int)), c = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(vlist, double)), c = 1;
+				break;
+			case 's':
+				str = va_arg(vlist, char *), c = 1;
+				if (!str)
+				{printf("(nil");
+					break;
+				}
+				printf("%s", str);
+				break;
+		}
+		i++;
 	}
-	sep = ", ";
-	i++;
+	printf("\n"), va_end(vlist);
 	}
-	}
-	printf("\n");
-	va_end(list);
-	}
+}
