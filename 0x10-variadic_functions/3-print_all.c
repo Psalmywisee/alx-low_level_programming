@@ -8,12 +8,11 @@
 */
 	void print_all(const char * const format, ...)
 	{
-	int i = 0;
 	char *str;
 	va_list vlist;
-	unsigned int i = 0, j, c = 0;
+	unsigned int i = 0, j = 0, c = 0;
+	const char t_arg[] = "ifsc";
 
-	cont char t_arg[} = "ijfsc"
 	va_start(vlist, format);
 		while (format && format[i])
 		{
@@ -47,6 +46,7 @@
 		}
 		i++;
 	}
-	printf("\n"), va_end(vlist);
-	}
+	printf("\n");
+		va_end(vlist);
+
 }
