@@ -13,7 +13,7 @@
 	unsigned int i = 0, j = 0, c = 0;
 	const char t_arg[] = "ifsc";
 
-	va_start(vlist, format);
+	va_start (vlist, format);
 		while (format && format[i])
 		{
 			j = 0;
