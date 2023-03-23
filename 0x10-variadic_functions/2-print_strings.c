@@ -12,6 +12,7 @@
 	va_list strings;
 	char *str;
 	unsigned int index;
+
 	va_start(strings, n);
 
 	for (index = 0; index < n; index++)
