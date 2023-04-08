@@ -3,7 +3,7 @@
  * print_binary - Function to  print binary representation of a number
  * @n: number whose binary is to be outputted
  */
-void print_binary(unsigned long int num)
+void print_binary(unsigned long int n)
 {
 	int i, count = 0;
 	unsigned long int num;
