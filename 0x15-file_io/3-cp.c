@@ -34,7 +34,7 @@ void close_file(int fd)
 {
 	int a;
 
-	c = close(fd);
+	a = close(fd);
 
 	if (a == -1)
 	{
@@ -75,8 +75,8 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 
-		w = write(to, buffer, r);
-		if (to == -1 || w == -1)
+		rw = write(to, buffer, r);
+		if (to == -1 || rw == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't write to %s\n", argv[2]);
