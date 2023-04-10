@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**append_text_to_file - Appending a text at end of file
